@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第18回 三部会連携「応用数理セミナー」</title>
+<meta name="description" content="日本応用数理学会 三部会連携「応用数理セミナー」（2026年12月25日開催）の公式ページ">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #1a1a2e;
+    background: #eef2f7;
+  }
+
+  a { color: #2c5f9e; }
+  a:hover { text-decoration: none; }
+
+  /* page wrapper */
+  .page {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 0 20px 80px;
+  }
+
+  /* header */
+  header {
+    background: #2c5f9e;
+    color: #fff;
+    padding: 48px 0 36px;
+    margin-bottom: 32px;
+  }
+  header .inner {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  header p.kicker {
+    font-size: 0.85rem;
+    opacity: 0.75;
+    margin-bottom: 6px;
+    letter-spacing: .05em;
+  }
+  header h1 {
+    font-size: 2rem;
+    line-height: 1.3;
+    margin-bottom: 14px;
+  }
+  header p.sub {
+    font-size: 0.92rem;
+    opacity: 0.85;
+    margin-bottom: 20px;
+  }
+  .chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .chip {
+    border: 1px solid rgba(255,255,255,0.55);
+    padding: 4px 12px;
+    font-size: 0.85rem;
+    border-radius: 4px;
+    background: rgba(255,255,255,0.12);
+    color: #fff;
+  }
+
+  /* nav */
+  nav {
+    background: #fff;
+    border-radius: 8px;
+    padding: 14px 20px;
+    margin-bottom: 24px;
+    font-size: 0.88rem;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+  }
+  nav a {
+    margin-right: 18px;
+    text-decoration: none;
+    color: #2c5f9e;
+  }
+  nav a:hover { text-decoration: underline; }
+
+  /* card container */
+  .card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 28px 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+  }
+
+  h2 {
+    font-size: 1.15rem;
+    color: #2c5f9e;
+    border-left: 4px solid #2c5f9e;
+    padding-left: 10px;
+    margin-bottom: 18px;
+  }
+
+  /* overview table */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  table th, table td {
+    text-align: left;
+    padding: 9px 12px;
+    border: 1px solid #dde3ec;
+    vertical-align: top;
+  }
+  table th {
+    width: 110px;
+    background: #f0f4f9;
+    font-weight: normal;
+    color: #5a6a80;
+    font-size: 0.88rem;
+  }
+
+  /* program */
+  .program-item {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    border: 1px solid #dde3ec;
+    border-bottom: none;
+  }
+  .program-item:first-child { border-radius: 6px 6px 0 0; }
+  .program-item:last-child { border-bottom: 1px solid #dde3ec; border-radius: 0 0 6px 6px; }
+  .program-item .time {
+    padding: 12px 14px;
+    font-size: 0.88rem;
+    border-right: 1px solid #dde3ec;
+    color: #5a6a80;
+    background: #f8fafc;
+    display: flex;
+    align-items: center;
+  }
+  .program-item .content {
+    padding: 14px 18px;
+  }
+  .program-item.break .time,
+  .program-item.break .content {
+    color: #9aa5b4;
+    background: #fafbfc;
+  }
+  .program-item .group {
+    font-size: 0.8rem;
+    color: #5a6a80;
+    margin-bottom: 4px;
+    background: #e8f0fa;
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 3px;
+  }
+  .program-item .speaker {
+    font-weight: bold;
+    margin-top: 6px;
+  }
+  .program-item .talk-title {
+    font-style: italic;
+    color: #555;
+    font-size: 0.93rem;
+  }
+  .tbd { color: #b05000; }
+
+  /* org list */
+  .org-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+  .org-cols h3 {
+    font-size: 0.8rem;
+    color: #5a6a80;
+    font-weight: normal;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+  }
+  .org-cols ul {
+    list-style: none;
+  }
+  .org-cols ul li {
+    padding: 5px 0;
+    border-bottom: 1px solid #edf0f5;
+    font-size: 0.93rem;
+  }
+  .org-cols ul li:last-child { border-bottom: none; }
+
+  /* endorsement */
+  .endorse {
+    margin-top: 20px;
+    font-size: 0.88rem;
+    color: #5a6a80;
+    border-top: 1px solid #dde3ec;
+    padding-top: 14px;
+  }
+  .endorse strong { color: #1a1a2e; }
+
+  /* notes */
+  ol.notes {
+    padding-left: 1.4em;
+    margin-top: 16px;
+  }
+  ol.notes li {
+    margin-bottom: 8px;
+    font-size: 0.93rem;
+  }
+
+  /* CTA */
+  .btn {
+    display: inline-block;
+    padding: 10px 22px;
+    background: #2c5f9e;
+    color: #fff !important;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.93rem;
+    margin-bottom: 20px;
+  }
+  .btn:hover { background: #1e4a80; }
+
+  /* updates */
+  .updates { list-style: none; }
+  .updates li {
+    display: flex;
+    gap: 16px;
+    padding: 6px 0;
+    border-bottom: 1px solid #edf0f5;
+    font-size: 0.9rem;
+  }
+  .updates .d { color: #5a6a80; min-width: 110px; }
+
+  /* archive */
+  .archive { font-size: 0.9rem; line-height: 2.2; }
+  .archive .grp { margin-bottom: 14px; }
+  .archive .grp strong {
+    display: block;
+    font-size: 0.78rem;
+    color: #5a6a80;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    margin-bottom: 2px;
+  }
+
+  /* contact */
+  .contact-info { font-size: 0.95rem; }
+  .contact-info a { font-weight: bold; }
+
+  /* footer */
+  footer {
+    text-align: center;
+    padding: 32px 0 20px;
+    font-size: 0.82rem;
+    color: #7a8ba0;
+  }
+
+  @media (max-width: 600px) {
+    header h1 { font-size: 1.55rem; }
+    .program-item { grid-template-columns: 1fr; }
+    .program-item .time { border-right: none; border-bottom: 1px solid #dde3ec; }
+    .org-cols { grid-template-columns: 1fr; gap: 20px; }
+    nav { font-size: 0.82rem; }
+    nav a { margin-right: 10px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="inner">
+    <p class="kicker">第18回 三部会連携</p>
+    <h1>応用数理セミナー</h1>
+    <p class="sub">学部生・大学院生、研究者・技術者のための入門セミナー</p>
+    <div class="chips">
+      <span class="chip">2026年12月25日（金）</span>
+      <span class="chip">対面 + Zoom（ハイブリッド）</span>
+      <span class="chip">参加無料</span>
+    </div>
+  </div>
+</header>
+
+<div class="page">
+
+  <nav>
+    <a href="#about">セミナーについて</a>
+    <a href="#overview">開催概要</a>
+    <a href="#program">プログラム</a>
+    <a href="#organizers">主催</a>
+    <a href="#access">参加方法</a>
+    <a href="#archive">アーカイブ</a>
+  </nav>
+
+  <div class="card" id="about">
+    <h2>セミナーについて</h2>
+    <p>
+      日本応用数理学会の「行列・固有値問題の解法とその応用」、「科学技術計算と数値解析」、「計算の品質」の三部会が連携し、<strong>今回は「位相的データ解析」研究部会が共催</strong>して、学部生・大学院生、企業の研究者・技術者を対象にした、応用数理セミナーを実施します。初心者向きの内容を意識しており、分野外の方も気軽にご参加いただけます。
+    </p>
+  </div>
+
+  <div class="card" id="overview">
+    <h2>開催概要</h2>
+    <table>
+      <tr><th>日時</th><td>2026年12月25日（金）</td></tr>
+      <tr><th>会場</th><td>早稲田大学 西早稲田キャンパス 63号館2階 05会議室 ＋ Zoom（オンライン）</td></tr>
+      <tr><th>対象</th><td>学部生・大学院生、企業の研究者・技術者（分野外の方も歓迎）</td></tr>
+      <tr><th>参加費</th><td>無料</td></tr>
+    </table>
+  </div>
+
+  <div class="card" id="program">
+    <h2>プログラム（仮）</h2>
+    <p style="font-size:.85rem;color:#9aa5b4;margin-bottom:14px;">※ 講演者・演題は確定次第更新します（一部はプレースホルダです）。</p>
+
+    <div class="program-item break">
+      <div class="time">10:30–11:00</div>
+      <div class="content">開場 / Zoomミーティング開場</div>
+    </div>
+    <div class="program-item">
+      <div class="time">11:00–12:00</div>
+      <div class="content">
+        <div class="group">計算の品質 研究部会</div>
+        <div class="speaker tbd">［講演者名（所属）TBD］</div>
+        <div class="talk-title tbd">［演題 TBD］</div>
+      </div>
+    </div>
+    <div class="program-item break">
+      <div class="time">12:00–13:20</div>
+      <div class="content">休憩</div>
+    </div>
+    <div class="program-item">
+      <div class="time">13:20–14:20</div>
+      <div class="content">
+        <div class="group">行列・固有値問題の解法とその応用 研究部会</div>
+        <div class="speaker tbd">［講演者名（所属）TBD］</div>
+        <div class="talk-title tbd">［演題 TBD］</div>
+      </div>
+    </div>
+    <div class="program-item break">
+      <div class="time">14:20–14:40</div>
+      <div class="content">休憩</div>
+    </div>
+    <div class="program-item">
+      <div class="time">14:40–15:40</div>
+      <div class="content">
+        <div class="group">科学技術計算と数値解析 研究部会</div>
+        <div class="speaker tbd">［講演者名（所属）TBD］</div>
+        <div class="talk-title tbd">［演題 TBD］</div>
+      </div>
+    </div>
+    <div class="program-item break">
+      <div class="time">15:40–16:00</div>
+      <div class="content">休憩</div>
+    </div>
+    <div class="program-item">
+      <div class="time">16:00–17:00</div>
+      <div class="content">
+        <div class="group">位相的データ解析 研究部会</div>
+        <div class="speaker tbd">［講演者名（所属）TBD］</div>
+        <div class="talk-title tbd">［演題 TBD］</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" id="organizers">
+    <h2>主催・共催・後援</h2>
+    <div class="org-cols">
+      <div>
+        <h3>主催</h3>
+        <ul>
+          <li><a href="https://jsiam.org/">日本応用数理学会</a></li>
+          <li><a href="http://mepa.jsiam.org/">行列・固有値問題の解法とその応用</a> 研究部会</li>
+          <li><a href="http://scna.jsiam.org/">科学技術計算と数値解析</a> 研究部会</li>
+          <li><a href="http://www.oishi.info.waseda.ac.jp/~qoc/">計算の品質</a> 研究部会</li>
+        </ul>
+      </div>
+      <div>
+        <h3>共催</h3>
+        <ul>
+          <li>位相的データ解析 研究部会</li>
+        </ul>
+      </div>
+    </div>
+    <div class="endorse">
+      <strong>後援：</strong>早稲田大学 理工学術院 応用数理学科
+    </div>
+  </div>
+
+  <div class="card" id="access">
+    <h2>参加方法・注意事項</h2>
+    <p style="margin-bottom:16px;">
+      会場・オンラインともに事前の参加登録をお願いいたします。登録された方に、オンライン参加用のZoomミーティングURLをメールにてお送りします。
+    </p>
+    <a class="btn tbd" href="#">参加登録フォーム（URL未定・TBD）</a>
+    <ol class="notes">
+      <li>ご興味のある方すべての参加を歓迎いたします。会場・オンラインともに事前の参加登録をお願いいたします。</li>
+      <li>講演資料を印刷して配布することはしません。講演資料は、講義当日までに電子版へのアクセス方法をお知らせします。</li>
+      <li>オンライン参加の方は、インターネットに接続できる機器（PC、タブレットなど）およびZoomのアカウントをご準備ください。</li>
+    </ol>
+  </div>
+
+  <div class="card" id="updates">
+    <h2>更新履歴</h2>
+    <ul class="updates">
+      <li><span class="d">2026.06.24</span><span>Webページの公開</span></li>
+    </ul>
+  </div>
+
+  <div class="card" id="archive">
+    <h2>アーカイブ・関連情報</h2>
+    <div class="archive">
+      <div class="grp">
+        <strong>過去のセミナー</strong>
+        <a href="https://sites.google.com/ml.jsiam.org/mepa/2025%E5%B9%B4%E5%BA%A6%E3%81%AE%E6%B4%BB%E5%8B%95/20251226-%E5%BF%9C%E7%94%A8%E6%95%B0%E7%90%86%E3%82%BB%E3%83%9F%E3%83%8A%E3%83%BC">2025</a> /
+        <a href="https://sites.google.com/view/jsiam-seminar-2024/">2024</a> /
+        <a href="https://tak-lab.github.io/JSIAM-Seminar-2023/">2023</a> /
+        <a href="http://mepa.jsiam.org/?page_id=2264">2022</a> /
+        <a href="https://sites.google.com/view/jsiam-seminar-2021">2021</a> /
+        <a href="https://tak-lab.github.io/JSIAM-Seminar-2020/">2020</a> /
+        <a href="https://na.cs.tsukuba.ac.jp/mepa/?page_id=1689">2019</a> /
+        <a href="https://sites.google.com/view/jsiam-seminar-2018/">2018</a> /
+        <a href="http://www.oishi.info.waseda.ac.jp/seminar/jsiam_seminar_2017.html">2017</a> /
+        <a href="http://www.sr3.t.u-tokyo.ac.jp/jsiam/jsiamseminar20161227">2016</a> /
+        <a href="http://www.sr3.t.u-tokyo.ac.jp/jsiam/jsiamseminar20151224">2015</a> /
+        <a href="http://www.oishi.info.waseda.ac.jp/~3ams2014/">2014</a> /
+        <a href="http://www.sr3.t.u-tokyo.ac.jp/jsiam/jsiamseminar20131227">2013</a> /
+        <a href="http://www.sr3.t.u-tokyo.ac.jp/jsiam/jsiamseminar20121225">2012</a> /
+        <a href="http://www.oishi.info.waseda.ac.jp/~3ams2011/">2011</a> /
+        <a href="http://www.cs.tsukuba.ac.jp/~sakurai/Seminar20101126.html">2010</a> /
+        <a href="http://www.jsiam.org/modules/eguide01/event.php?eid=63">2009</a>
+      </div>
+      <div class="grp">
+        <strong>JSIAM Online Magazine (JOM)</strong>
+        <a href="https://jom.jsiam.org/?article=G2003D">2019</a> /
+        <a href="https://jom.jsiam.org/?article=G1902A">2018</a> /
+        <a href="http://jom.jsiam.org/?article=G1801D">2017</a> /
+        <a href="http://jom.jsiam.org/12699/">2014</a>
+      </div>
+      <div class="grp">
+        <strong>応用数理 学術会合報告</strong>
+        <a href="https://www.jstage.jst.go.jp/article/bjsiam/21/2/21_KJ00007296906/_article/-char/ja/">2010</a> /
+        <a href="https://www.jstage.jst.go.jp/article/bjsiam/20/3/20_KJ00006628977/_article/-char/ja/">2009</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" id="contact">
+    <h2>お問い合わせ</h2>
+    <div class="contact-info">
+      <p><a href="https://www.risk.tsukuba.ac.jp/~takitoshi/">高安 亮紀</a>（筑波大学）<br>
+      <a href="mailto:takitoshi@risk.tsukuba.ac.jp">takitoshi@risk.tsukuba.ac.jp</a></p>
+    </div>
+  </div>
+
+</div><!-- /page -->
+
+<footer>
+  第18回 三部会連携「応用数理セミナー」 &copy; 日本応用数理学会
+</footer>
+
+</body>
+</html>
